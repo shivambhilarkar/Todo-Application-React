@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    box-sizing: content-box;
+}
+.singleDashboardBox{
+    /* border: 1px solid rgb(71, 71, 71); */
+    margin: 10px 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow: 2px 4px 6px rgb(149, 149, 149); */
+    border: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+}
+.singleDashboardBox:hover{
+    box-shadow: 2px 4px 6px rgb(113, 113, 113);
+    background-color: rgba(231, 231, 231, 0.537);
+    color: white;
+}
+
+.singleDashboardBox  .singleDashboardBoxHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.singleDashboardBox  .singleDashboardBoxHeader input{
+    width: 98%;
+    padding: 2px;
+}
+.singleDashboardBox  .singleDashboardBoxBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+.singleDashboardBox  .singleDashboardBoxBody textarea{
+   width: 100%;
+}
+
+.singleDashboardBox  .singleDashboardBoxFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+.singleDashboardBox  .singleDashboardBoxFooter input{
+    width: 25%;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: medium;
+    text-align: center;
+    background-color: rgba(182, 182, 182, 0.614);
+}
+.singleDashboardBox  .singleDashboardBoxFooter #editbtn:hover{
+    color: white;
+    background-color: rgb(13, 78, 24);
+    box-shadow: 2px 4px 6px grey;
+    border: none;
+}
+.singleDashboardBox  .singleDashboardBoxFooter #dltbtn:hover{
+    color: white;
+    background-color: rgb(157, 24, 24);
+    box-shadow: 2px 4px 6px grey;
+    border: none;
+}

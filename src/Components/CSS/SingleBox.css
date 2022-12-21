@@ -1,0 +1,119 @@
+div .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto auto;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 70%;
+    height: 400px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    margin-top: -500px;
+    background-color: white;
+    /* animation: pop 2s linear; */
+    box-shadow:  2px 4px 10px rgba(0, 0, 0, 0.534);
+}
+
+
+
+div .box .headerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 10px;
+    height: 10%;
+}
+div .box .headerbox label{
+    font-size: medium;
+} 
+div .box .headerbox input{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+div .box #contentbox{
+    height: 70%;
+    padding: 10px;
+    resize: none;
+}
+div .box .bottombox{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    height: 10%;
+    margin-top: 5px;
+    align-self: flex-end;
+    width: 100%;
+}
+div .box .bottombox input{
+    border: none;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(198, 198, 198);
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+div .box .bottombox input:hover{
+    box-shadow: 2px 4px 4px rgba(86, 86, 86, 0.806);
+    background-color: black;
+    color: white;
+}
+
+
+/* animation */
+@keyframes pop {
+    0% {
+    }
+    25%{
+        transform: translateY(100px);
+    }
+    50% {
+        transform: translateY(200px);
+    }
+    75% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(550px);
+    }
+  }
+
+  @keyframes revpop {
+    0% {
+    }
+    25%{
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    75% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(-500px);
+    }
+  }
+
+  /* animation spell btn */
+  @keyframes colorChangeSpellBtn {
+    from { 
+        background-color: rgb(198, 198, 198);
+        color: black;
+    }
+    to {
+        background-color: rgb(15, 134, 41);
+        color: white;
+    }
+  }
