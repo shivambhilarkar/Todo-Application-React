@@ -10,7 +10,7 @@ const NavBar = () => {
         document.getElementById('add_box').style.animation = 'pop 0.5s linear forwards'
     }
 
-    const goto_homepage = () => navigate('/')
+    const goto_homepage = () => navigate('Todo_Application_React/')
 
     return (
             <nav>

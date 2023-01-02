@@ -22,7 +22,7 @@ const ReadDashboard = () => {
     
             <div className="readbox_footer">
                 <div className="readbox_footer_left">
-                    <input type="button" value="Close"  onClick={ () => navigate('/') } />
+                    <input type="button" value="Close"  onClick={ () => navigate('/Todo_Application_React/') } />
                     {/* <input type="button" value="Delete" />
                     <input type="button" value="Edit" /> */}
                 </div>

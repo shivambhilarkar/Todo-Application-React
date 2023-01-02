@@ -23,7 +23,7 @@ const SingleDashboardBox = (props) =>{
     }, []);
 
     
-    const goto_read_note = () => navigate('/readnote' , { 
+    const goto_read_note = () => navigate('/Todo_Application_React/readnote' , { 
         state:
             {  
                 todohead : props.todoheader ,

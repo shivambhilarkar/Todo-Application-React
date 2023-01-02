@@ -14,8 +14,8 @@ function App() {
       <NavBar/>
       <SingleBox/>
       <Routes>
-        <Route path="/" element={ <GridBoxDashboard/> } />
-        <Route path='/readnote' element={ <ReadDashboard/> } />
+        <Route path="/Todo_Application_React/" element={ <GridBoxDashboard/> } />
+        <Route path='/Todo_Application_React/readnote' element={ <ReadDashboard/> } />
       </Routes>   
 
       </>   
