@@ -14,7 +14,6 @@ function App() {
       <NavBar/>
       <SingleBox/>
       <Routes>
-        {/* <Route path="/" element={ <NavBar/> } /> */}
         <Route path="/" element={ <GridBoxDashboard/> } />
         <Route path='/readnote' element={ <ReadDashboard/> } />
       </Routes>   
@@ -24,10 +23,3 @@ function App() {
 }
 
 export default App;
-
-  
-          {/* <SingleBox/> */}
-
-          {/* <GridBoxDashboard/> */}
-          
-          {/* <SingleDashboardBox/> */}
