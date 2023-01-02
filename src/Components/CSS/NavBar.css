@@ -7,6 +7,11 @@ nav{
     box-shadow: 2px 4px 6px rgb(173, 173, 173);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 nav .navbox{
@@ -25,10 +30,10 @@ nav .navbox .navleftbox{
     transition: 1s;
     font-size: large;
 }
-nav .navbox .navleftbox:hover{
+/* nav .navbox .navleftbox:hover{
     text-shadow: 2px 2px 4px rgb(60, 255, 0);
     letter-spacing: 10px;
-}
+} */
 
 nav .navbox .navmidbox{
     display: flex;

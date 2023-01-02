@@ -16,4 +16,11 @@ code {
 html{
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+    color: brown;
+    width: max-content;
 }

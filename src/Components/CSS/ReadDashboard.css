@@ -1,0 +1,53 @@
+
+.readbox_outer{
+    margin: 7% auto;
+    width: 98%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgb(65, 65, 65);
+    box-sizing: border-box;
+}
+
+.readbox_outer .innerbox h3{
+    margin-left: 2%;
+}
+
+.readbox_outer .innerbox textarea{
+    box-sizing: border-box;
+    width: 98%;
+    resize: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+.readbox_outer .readbox_footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+.readbox_outer .readbox_footer .readbox_footer_left{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.readbox_outer .readbox_footer .readbox_footer_left input{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: medium;
+}
+.readbox_outer .readbox_footer .readbox_footer_left input:hover{
+    background-color: black;
+    color: white;
+}

@@ -6,6 +6,8 @@ const SingleBox = () => {
 
     const [todoDB , setTodoDB] = useState([]);
     
+
+
     let add_todo = () => {
         let header = document.getElementById('headingbox').value;
         let textmsg = document.getElementById('contentbox').value;
@@ -90,7 +92,6 @@ const SingleBox = () => {
         }
         document.getElementById('add_box').style.animation = 'revpop 1s linear forwards';
         document.getElementById('add_btn').value = 'Add ➕'
-
     }
     return (
 

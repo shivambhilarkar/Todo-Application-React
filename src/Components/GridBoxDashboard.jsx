@@ -1,7 +1,9 @@
 import React , {Component} from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import './CSS/GridBoxDashboard.css'
+import ReadDashboard from "./ReadDashboard";
 import SingleDashboardBox from "./SingleDashboardBox";
 
 const GridBoxDashboard = () => {
@@ -32,21 +34,26 @@ const GridBoxDashboard = () => {
 
     return(
 
-        <div className="gridlayout">
-           
-           { 
-           todoDB.map(element => {
-                return <SingleDashboardBox
-                    key={element.id}
-                    todoheader={element.header}
-                    todocontent={element.content}
-                    tododate={element.date}
-                    deletetodo={delete_todo}
-                    keydelete={element.id}
-                    />
-            })
-            }
-        </div>
+        
+            <div className="gridlayout">
+            { 
+            todoDB.map(element => {
+                    return( 
+                    
+                    <SingleDashboardBox
+                        key={element.id}
+                        todoheader={element.header}
+                        todocontent={element.content}
+                        tododate={element.date}
+                        deletetodo={delete_todo}
+                        keydelete={element.id}
+                        />
+
+                    )
+               
+                })
+                }
+            </div>
 
     );
 };
